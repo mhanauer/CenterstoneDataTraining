@@ -43,6 +43,8 @@ However, if you are analysis only requires certain variables, only include those
 
 Merging
 
+Descriptives (summary and describe)
+
 paired t-test in R
 
 make skewed data
