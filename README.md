@@ -35,9 +35,8 @@ Then if you want to write the data set to a csv you can use the write csv functi
 setwd("~/Desktop")
 dat = read.csv("dat.csv", header = TRUE)
 write.csv(dat, "dat.csv", row.names = FALSE)
-
 ```
-Dealing with missing data (Creating some missing data ignore this)
+Here I am creating some missing data.  I am using the $ command to identify the variables I want to access.  Then, I am using the [] to indicate the rows in the specific variables of the variable that I want to access.  For the Ethnicity variable, I am accessing rows 100 through 200.  Then I am using the = sign to tell R that I want the selected rows in the selected variables to equal NA. 
 ```{r warning=FALSE}
 dat$Ethnicity[100:200] = NA
 dat$postScore[120:220] = NA
